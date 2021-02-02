@@ -1,0 +1,41 @@
+.vertical-nav {
+  min-width: 10rem;
+  width: 10rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+  background-color:rgba(0, 0, 255, 0.7);
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -10rem;
+}
+
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -10rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 10rem;
+    width: calc(100% - 10rem);
+  }
+}
+
+.nav-link{
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
