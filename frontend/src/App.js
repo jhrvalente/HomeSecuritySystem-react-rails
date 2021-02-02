@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Sensors from './pages/Sensors';
 import History from './pages/History';
+import Options from './pages/Options';
 import './App.css';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <History/>
         </Route>
         <Route path="/options" exact>
+          <Options/>
         </Route>
       </Switch>
     </Router>
